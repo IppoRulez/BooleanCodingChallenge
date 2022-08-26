@@ -1,0 +1,81 @@
+/* Inizio con il reset del boxsizing e l'impostazione del font weight  */
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+p,
+span {
+    font-weight: 300;
+}
+
+/* imposto la font family per tutto il body dato che voglio lo stesso stile per tutta la pagina */
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: small;
+}
+
+/* al container assegno un bg nero con trasparenza e ne definisco le dimensioni, usando la percentile per l'altezza per assicurarmi di non avere errori nel caso in cui vorrò aggiungere altri elementi di prenotazione in futuro. */
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    height: 100%;
+    width: 950px;
+
+    border-radius: 25px;
+    margin: 30px auto;
+    padding: 50px 100px;
+}
+
+.header, .navbar {
+    text-align: center;
+}
+
+/* definisco solo una dimensione per il logo per non deformare la forma originale */
+#logo {
+    width: 250px
+}
+
+h1 {
+    color: lime;
+    margin-bottom: 3px;
+}
+
+.navbar {
+    padding: 10px;
+    background-color: lime;
+}
+
+.scooter-status {
+    color: white;
+}
+
+/* come specificato nell'html, ustilizzo la classe 'carica' per impostare degli stili comuni a tutti i div che indicano lo stato di carica del dispositivo */
+.carica {
+    border-radius: 5px;
+    height: 20px;
+    margin-top: 5px;
+}
+/* utilizzo le varie classi assegnate precedentemente assegnate  per definire il colore e la lunghezza della barra che indica la carica. Avrei potuto anche utilizzare il selettore con la doppia classe
+.carica.gino per essere più specifico e selezionare lo stesso elemento, ma in questo momento non è necessario in quanto nessun altro elemento utiluzza questa classe  */
+.gino {
+    width: 40%;
+    background-color: rgb(255, 183, 0);
+}
+
+.mike {
+    width: 70%;
+    background-color: rgb(67, 234, 30)
+}
+
+.fede{
+    width: 20%;
+    background-color: rgb(251, 64, 31);
+}

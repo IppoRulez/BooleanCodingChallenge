@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scooter Lim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Creo un contenitore per l'effetto trasparenza e il posizionamento -->
+    <div class="container">
+        <!-- Creo un div con classe header per racchiudere logo, titolo e navbar  e centrare tutti gli elementi-->
+        <div class="header">
+            <img src="logo.png" alt="logo lim coding challenge" id="logo">
+            <h1>Taking Booleaners from A to B</h1>
+            <!-- Creo un div con classe navbar con i bottoni per gestire la prenotazione -->
+            <div class="navbar">
+                <button>Prenota</button>
+                <button>Termina Prenotazione</button>
+                <button>Accendi le luci</button>
+            </div>
+        </div>
+
+        <!-- Creo un div che conterrà le informazioni sullo stato dei dispositivi -->
+        <div>
+            <!-- Per ogni dispositivo creo un div con il nome e lo stato (posizione, carica). Assegno ad ciascuno la stessa classe in modo da poterli selezionare all'interno di css senza l'utilizzo di un selettore troppo complicato -->
+            <div class="scooter-status">
+                <h2>&squarf; Monopattino Gino22</h2>
+                <p>&RightTeeArrow; Via Guadalametri - a 220 metri da te</p>
+                <!-- Utilizzo uno span per lo stato della carica in modo da evitare gli stili (margin, padding) già impostati ai p -->
+                <span>Stato carica:</span>
+                <!-- inserisco un div con due classi in modo da poter atribuire allo stesso tipo di elementi uno stile comune (in questo caso le dimensioni di altezza, margine e raggio del bordo) utilizzando la classe comune a tutti, ma allo stesso tempo riuscire ad agire distintamente su ognuno per altri elementi stilistici (colore, lunghezza) -->
+                <div class="carica gino"></div>
+            </div>
+            <div class="scooter-status">
+                <h2>&squarf; Monopattino Mike24</h2>
+                <p>&RightTeeArrow; Via Ricciardoni - a 420 metri da te</p>
+                <span>Stato carica:</span>
+                <div class="carica mike"></div>
+            </div>
+            <div class="scooter-status">
+                <h2>&squarf; Monopattino Fede154</h2>
+                <p>&RightTeeArrow; Via Mentarini - a 490 metri da te</p>
+                <span>Stato carica:</span>
+                <div class="carica fede"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
